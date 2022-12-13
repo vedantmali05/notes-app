@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noted</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" type="image/png" href="media/logo.png">
+
+</head>
+
+<body>
+
+    <header>
+        <button class="icon-btn" id="menu_btn">
+            <span class="icon">
+                <i class="bi bi-list"></i>
+            </span>
+        </button>
+        <div class="overline logo">
+            <img src="media/logo.png" alt="📒"> Notes
+        </div>
+
+        <!-- Search Box -->
+        <form class="search-box">
+            <span class="icon search-icon">
+                <i class="bi bi-search"></i>
+            </span>
+            <span class="search-input">
+                <input type="text" placeholder="Search notes..." autocomplete="off" id="search_input">
+            </span>
+            <button type="reset" class="icon-btn clear-btn" id="clear_search_btn">
+                <i class="bi bi-x"></i>
+            </button>
+        </form>
+
+        <button id="add_btn" class="primary-cta">
+            <i class="bi bi-plus-lg"></i>
+            Add Note
+        </button>
+    </header>
+
+    <main class="main">
+        <nav class="navigation" id="menu">
+            <menu>
+                <button class="menu-item body-l" id="all_notes_btn">
+                    <span class="icon">
+                        <i class="bi bi-journal"></i>
+                    </span>
+                    All notes
+                </button>
+            </menu>
+
+            <menu>
+                <button class="menu-item body-l" id="fav_notes_btn">
+                    <span class="icon">
+                        <i class="bi bi-star"></i>
+                    </span>
+                    Important
+                </button>
+                <button class="menu-item body-l" id="archived_notes_btn">
+                    <span class="icon">
+                        <i class="bi bi-archive"></i>
+                    </span>
+                    Archived
+                </button>
+                <button class="menu-item body-l" id="trash_notes_btn">
+                    <span class="icon">
+                        <i class="bi bi-trash"></i>
+                    </span>
+                    Trash
+                </button>
+            </menu>
+
+            <menu>
+                <button class="menu-item body-l" id="about_btn">
+                    About Us
+                </button>
+            </menu>
+        </nav>
+
+        <section class="notes-sec" id="note_ctr">
+            <div class="note"
+                data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, repudiandae. Cupiditate blanditiis, quae ullam quos ducimus voluptates eaque distinctio magni quia eligendi corrupti facilis ipsa numquam veritatis animi nostrum reprehenderit, explicabo labore ratione fugiat minima. Corrupti similique placeat necessitatibus nulla voluptate? Aliquam velit commodi vero quis facere illo reprehenderit ipsum optio quas omnis. Aut officiis, temporibus quaerat eligendi odio placeat. Commodi voluptatibus corporis molestias perspiciatis nemo ab, aliquam ad asperiores nihil. Hic delectus non esse, harum, odit temporibus molestiae saepe vitae reprehenderit minima similique. Aliquam minima animi, ratione rem ab inventore laborum? Et ipsam nihil, cumque a saepe ipsa quaerat!">
+                <div class="title-box">
+                    <span class="title">Simple Note</span>
+
+                    <button class="status">Edit</button>
+                </div>
+                <div class="control-box">
+                    <button class="icon-btn trash-btn" title="Move to trash">
+                        <span class="icon"><i class="bi bi-trash"></i></span>
+                    </button>
+                    <button class="icon-btn share-btn" title="Share with friends">
+                        <span class="icon"><i class="bi bi-share"></i></span>
+                    </button>
+                    <button class="icon-btn archive-btn" title="Archive Note">
+                        <span class="icon"><i class="bi bi-archive"></i></span>
+                    </button>
+                    <button class="icon-btn important-btn" title="Mark as Important">
+                        <span class="icon"><i class="bi bi-star"></i></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="note"
+                data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, repudiandae. Cupiditate blanditiis, quae ullam quos ducimus voluptates eaque distinctio magni quia eligendi corrupti facilis ipsa numquam veritatis animi nostrum reprehenderit, explicabo labore ratione fugiat minima. Corrupti similique placeat necessitatibus nulla voluptate? Aliquam velit commodi vero quis facere illo reprehenderit ipsum optio quas omnis. Aut officiis, temporibus quaerat eligendi odio placeat. Commodi voluptatibus corporis molestias perspiciatis nemo ab, aliquam ad asperiores nihil. Hic delectus non esse, harum, odit temporibus molestiae saepe vitae reprehenderit minima similique. Aliquam minima animi, ratione rem ab inventore laborum? Et ipsam nihil, cumque a saepe ipsa quaerat!">
+                <div class="title-box">
+                    <span class="title">Favorite</span>
+
+                    <button class="status">Edit</button>
+                </div>
+                <div class="control-box">
+                    <button class="icon-btn trash-btn" title="Move to trash">
+                        <span class="icon"><i class="bi bi-trash"></i></span>
+                    </button>
+                    <button class="icon-btn share-btn" title="Share with friends">
+                        <span class="icon"><i class="bi bi-share"></i></span>
+                    </button>
+                    <button class="icon-btn archive-btn" title="Archive Note">
+                        <span class="icon"><i class="bi bi-archive"></i></span>
+                    </button>
+                    <button class="icon-btn important-btn" title="Mark as Important">
+                        <span class="icon"><i class="bi bi-star"></i></span>
+                    </button>
+                </div>
+            </div>
+            <div class="note"
+                data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, repudiandae. Cupiditate blanditiis, quae ullam quos ducimus voluptates eaque distinctio magni quia eligendi corrupti facilis ipsa numquam veritatis animi nostrum reprehenderit, explicabo labore ratione fugiat minima. Corrupti similique placeat necessitatibus nulla voluptate? Aliquam velit commodi vero quis facere illo reprehenderit ipsum optio quas omnis. Aut officiis, temporibus quaerat eligendi odio placeat. Commodi voluptatibus corporis molestias perspiciatis nemo ab, aliquam ad asperiores nihil. Hic delectus non esse, harum, odit temporibus molestiae saepe vitae reprehenderit minima similique. Aliquam minima animi, ratione rem ab inventore laborum? Et ipsam nihil, cumque a saepe ipsa quaerat!">
+                <div class="title-box">
+                    <span class="title">Archived Note</span>
+
+                    <button class="status">Edit</button>
+                </div>
+                <div class="control-box">
+                    <button class="icon-btn trash-btn" title="Move to trash">
+                        <span class="icon"><i class="bi bi-trash"></i></span>
+                    </button>
+                    <button class="icon-btn share-btn" title="Share with friends">
+                        <span class="icon"><i class="bi bi-share"></i></span>
+                    </button>
+                    <button class="icon-btn archive-btn" title="Archive Note">
+                        <span class="icon"><i class="bi bi-archive"></i></span>
+                    </button>
+                    <button class="icon-btn important-btn" title="Mark as Important">
+                        <span class="icon"><i class="bi bi-star"></i></span>
+                    </button>
+                </div>
+            </div>
+            <div class="note"
+                data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, repudiandae. Cupiditate blanditiis, quae ullam quos ducimus voluptates eaque distinctio magni quia eligendi corrupti facilis ipsa numquam veritatis animi nostrum reprehenderit, explicabo labore ratione fugiat minima. Corrupti similique placeat necessitatibus nulla voluptate? Aliquam velit commodi vero quis facere illo reprehenderit ipsum optio quas omnis. Aut officiis, temporibus quaerat eligendi odio placeat. Commodi voluptatibus corporis molestias perspiciatis nemo ab, aliquam ad asperiores nihil. Hic delectus non esse, harum, odit temporibus molestiae saepe vitae reprehenderit minima similique. Aliquam minima animi, ratione rem ab inventore laborum? Et ipsam nihil, cumque a saepe ipsa quaerat!">
+                <div class="title-box">
+                    <span class="title">Trashed Note</span>
+
+                    <button class="status">Edit</button>
+                </div>
+                <div class="control-box">
+                    <button class="icon-btn trash-btn" title="Move to trash">
+                        <span class="icon"><i class="bi bi-trash"></i></span>
+                    </button>
+                    <button class="icon-btn share-btn" title="Share with friends">
+                        <span class="icon"><i class="bi bi-share"></i></span>
+                    </button>
+                    <button class="icon-btn archive-btn" title="Archive Note">
+                        <span class="icon"><i class="bi bi-archive"></i></span>
+                    </button>
+                    <button class="icon-btn important-btn" title="Mark as Important">
+                        <span class="icon"><i class="bi bi-star"></i></span>
+                    </button>
+                </div>
+            </div>
+            <div class="note"
+                data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, repudiandae. Cupiditate blanditiis, quae ullam quos ducimus voluptates eaque distinctio magni quia eligendi corrupti facilis ipsa numquam veritatis animi nostrum reprehenderit, explicabo labore ratione fugiat minima. Corrupti similique placeat necessitatibus nulla voluptate? Aliquam velit commodi vero quis facere illo reprehenderit ipsum optio quas omnis. Aut officiis, temporibus quaerat eligendi odio placeat. Commodi voluptatibus corporis molestias perspiciatis nemo ab, aliquam ad asperiores nihil. Hic delectus non esse, harum, odit temporibus molestiae saepe vitae reprehenderit minima similique. Aliquam minima animi, ratione rem ab inventore laborum? Et ipsam nihil, cumque a saepe ipsa quaerat!">
+                <div class="title-box">
+                    <span class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere iure praesentium
+                        autem commodi.</span>
+
+                    <button class="status">Edit</button>
+                </div>
+                <div class="control-box">
+                    <button class="icon-btn trash-btn" title="Move to trash">
+                        <span class="icon"><i class="bi bi-trash"></i></span>
+                    </button>
+                    <button class="icon-btn share-btn" title="Share with friends">
+                        <span class="icon"><i class="bi bi-share"></i></span>
+                    </button>
+                    <button class="icon-btn archive-btn" title="Archive Note">
+                        <span class="icon"><i class="bi bi-archive"></i></span>
+                    </button>
+                    <button class="icon-btn important-btn" title="Mark as Important">
+                        <span class="icon"><i class="bi bi-star"></i></span>
+                    </button>
+                </div>
+            </div> 
+
+        </section>
+
+        <section class="preview-sec" id="preview_sec">
+            <form class="add-ctr" id="add_note_form">
+                <div class="add-title">
+                    <textarea id="add_title_txt" rows="5" placeholder="Enter note title" class="body-s"></textarea>
+                </div>
+
+                <div class="prev-controls">
+                    <button type="submit" class="primary-cta" id="save_note_btn">
+                        <i class="bi bi-journal-check"></i>
+                        Save Note
+                    </button>
+                    <button class="icon-btn" id="bg_note_btn" title="Background Options">
+                        <span class="icon"><i class="bi bi-palette"></i></span>
+                    </button>
+                    <button type="button" class="neg-btn" id="cancel_note_btn" title="Double Click">
+                        Cancel
+                    </button>
+                </div>
+
+                <div class="add-content">
+                    <textarea id="add_content_txt" class="body-s" rows="15" placeholder="Take a note"></textarea>
+                </div>
+            </form>
+
+            <form class="prev-ctr" id="preview">
+                <button type="button" class="icon-btn" id="close_prev_btn" title="Save and close">
+                    <span class="icon"><i class="bi bi-x-lg"></i></span>
+                </button>
+                <div id="prev_title" class="prev-title" contenteditable="true">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio vel molestiae repellendus eligendi
+                    nobis
+                    iusto magni iste consequuntur.
+                </div>
+
+                <div class="prev-controls">
+                    <!-- Trash Button -->
+                    <button class="icon-btn" id="prev_trash_btn" title="Move to trash">
+                        <span class="icon"><i class="bi bi-trash"></i></span>
+                    </button>
+                    <button class="icon-btn" id="prev_share_btn" title="Share with friends">
+                        <span class="icon"><i class="bi bi-share"></i></span>
+                    </button>
+                    <button class="icon-btn" id="prev_archive_btn" title="Archive Note">
+                        <span class="icon"><i class="bi bi-archive"></i></span>
+                    </button>
+                    <button class="icon-btn" id="prev_important_btn" title="Mark as Important">
+                        <span class="icon"><i class="bi bi-star"></i></span>
+                    </button>
+                    <button class="icon-btn" id="prev_copy_btn" title="Copy to clipboard">
+                        <span class="icon"><i class="bi bi-clipboard"></i></span>
+                    </button>
+                </div>
+
+                <div id="prev_content" class="prev-content body-s" contenteditable="true">
+                </div>
+            </form>
+
+
+            <section id="empty_prev" class="empty-state">
+                <span class="icon"><i class="bi bi-arrow-90deg-left"></i></span>
+                <h2>Click on note to view or edit it.</h2>
+            </section>
+
+            <section id="about" class="empty-state">
+                <span class="icon"><i class="bi bi-person"></i></span>
+                <h2>About Us</h2>
+            </section>
+        </section>
+    </main>
+
+    <section class="share-main" id="share_main">
+        <h3>Share notes...
+            <button type="button" class="icon-btn" id="close_share_btn" title="Cancel Sharing">
+                <span class="icon"><i class="bi bi-x-lg"></i></span>
+            </button>
+        </h3>
+
+        <section id="shared_note">
+        </section>
+
+        <section class="share-box">
+            <input type="email" name="receiver" id="receiver" onblur="emailValid()">
+            <button type="button" id="send_btn" class="icon-btn">
+                <span class="icon"><i class="bi bi-envelope"></i></span> SEND
+            </button>
+        </section>
+
+        <div id="invalidbox">Send via email.</div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
